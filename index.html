@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header style="background-color: #7aaa82; border: 1px black solid; height: 400px;" >
+        <h1 style="margin-left: 15%; padding-top: 50px;">Welcome to my web portfolio! </h1>
+        <p style="width: 620px; margin: 0px 100px 0px 100px; padding: 10px; font-family: 'Times New Roman', Times, serif; font-size: 20px;" > 
+          I am a passionate and experienced web developer dedicated to
+             crafting cutting-edge digital solutions that captivate audiences and drive results.
+             With a keen eye for design and a mastery of the latest technologies, I specialize in delivering seamless 
+             user experiences across a variety of platforms. From dynamic websites to interactive web applications, each project
+              in my portfolio is a testament to my commitment to excellence and innovation.  Explore my work and discover
+               how I can elevate your online presence with bespoke web solutions tailored to your unique needs.
+        </p>
+     <div class="" style="margin-left: 70%; margin-top: -20%;">
+        <div class="radio-inputs" style="background-color: black;">
+            <label class="radio">
+              <input type="radio" name="radio" checked="">
+              <span class="name"><a href="" >Home</a></span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio">
+              <span class="name"> <a href="">Contact</a></span>
+            </label>
+            <label class="radio">
+                <input type="radio" name="radio">
+                <span class="name"><a href=""  >Gallary</a></span>
+              </label>
+            <label class="radio">
+              <input type="radio" name="radio">
+              <span class="name"><a href="" >About</a></span>
+            </label>
+          </div>
+</div>
+<button>
+    <span>GET STARTED</span>
+  </button>
+  
+    </header>
+
+    <main>
+        <Div>
+            <img src="me1.jpg" alt=" myphoto">
+            
+        </Div>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
+<style>
+
+body{
+    background-color: #EBF3E8;
+}
+.radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.9rem;
+  background-color: #EEE;
+  box-sizing: border-box;
+  box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem;
+  width: 400px;
+  font-size: 14px;
+}
+
+.radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.radio-inputs .radio input {
+  display: none;
+}
+
+.radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  border: none;
+  padding: .5rem 0;
+  color: rgb(145, 157, 175);
+  transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio input:checked + .name {
+  background-color: #fff;
+  font-weight: 600;
+}
+button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  width: 220px;
+  margin: 280px 350px 300px 350px;
+}
+
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #95dd42;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+</style>
